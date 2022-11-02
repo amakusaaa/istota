@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Istota</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+         
+    </head>
+    <body>
+        <div class="box">
+            <header class="header">
+                <div class="header_container">
+                    <!-- Logo -->
+                    <a href="" class="header_logo">Istota</a>
+                    <!-- Menu -->
+                    <nav class="header_menu">
+                        <ul class="menu_list">
+                            <li class="menu_item">
+                                <a href="" class="menu_link">Главная</a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="" class="menu_link">Каталог</a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="" class="menu_link">Доставка</a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="" class="menu_link">О нас</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </header>
+            
+            <main class="main">
+                <div class="content">
+                    <div class="content-top">
+                    <div class="content-cotegory">Биоблог - ISTOTA</div>
+                    <h1 class="content-discription">Меня зовут Никита, я участник команды istota, make biology great again</h1> 
+                    </div>
+                    <div class="content-image">
+                        <div class="image-item">
+                        <img src="img/IMG_6927.png"  width="400" height="400" alt="ихтиозавр">
+                        </div>
+                    </div>
+                    <div class="content-bottom">
+                        <div class="content-bottom_text">
+                            <p>Мы считаем, что биология имеет большой потенциал, это одна из тех наук которая
+                                может быть полезна и интересна для большого числа людей. Для того чтобы заниматься биологией не
+                                нужно иметь современную лабораторию  или быть в курсе всех последних новостей,
+                                достаточно лишь начать знакомится с окружением И быть к нему чуть
+                                внимательнее и заботливее.</p>
+                                <br>
+
+                            <p>В формате блога, мы хотим показать, как оживить пространство вокруг без больших
+                                затрат времени и ресурсов. Понаблюдаем, как организмы приспособились к жизни в
+                                разных условиях. Узнаем, куда съездить на природу и что посмотреть. Будем
+                                определять и запоминать различные виды. Расскажем, почему так важно расширять
+                                свои знания по экологии. Ну и, конечно, мы будем "растить кого хотим",
+                                экспериментировать и просто пробовать что-то новое, а результатами делиться с
+                                вами.</p>
+
+                        </div>
+
+                            <div class="item_container">    
+                                <div class="item_1 item">
+                                    <div class="item_1_img img">
+                                        <div class="container_image_1 container_image"><img src="img/research.png" alt="research"></div>
+                                    </div>
+                                    <div class="item_1_text text">Разбираем статьи</div>
+                                </div>
+                                <div class="item_2 item">
+                                    <div class="item_2_img img">
+                                        <div class="container_image_2 container_image">  <img src="img/plant.png" alt="plant"></div>
+                                    </div>
+                                    <div class="item_2_text text">"Растим кого хотим" и делимся опытом</div>
+                                </div>
+                                <div class="item_3 item">
+                                    <div class="item_3_img img">
+                                        <div class="container_image_3 container_image"><img src="img/eco.png" alt="eco"></div>
+                                    </div>
+                                        <div class="item_3_text text">Пишем об экологии и экологическом образе жизни</div>
+                                </div>
+                                <div class="item_4 item">
+                                    <div class="item_4_img img">
+                                        <div class="container_image_4 container_image"><img src="img/travel.png" alt="travel"></div>
+                                    </div>
+                                        <div class="item_4_text text">Немного путешествуем и общаемся с вами</div>
+                                </div>
+                            </div>
+
+
+                        <div class="container" value="блоки" id="elements">
+                            <ul>                              
+                                <li>"Растим кого хотим" и делимся опытом</li>
+                                <li>Разбираем статьи</li>                                        
+                                <li>Пишем об экологии и экологическом образе жизни</li>
+                                <li>Немного путешествуем и общаемся с вами</li>
+                                <div class="wrapper">
+                                    <a target="_blank" href="https://www.instagram.com/ist.ota/" class="wave-btn">
+                                        <span class="wave-btn__text">Узнать больше</span>
+                                        <span class="wave-btn__wave"></span>
+
+                                    </a>
+                                </div>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <div class="whatisyou" id="whatisyou">
+                какой ты сегодня
+               <p> <button onclick="changeColor('blue');">спокойный</button></p> 
+               <p><button onclick="changeColor('red');">агрессивный</button></p> 
+               <p><button onclick="changeColor('green');">гнилой</button></p> 
+               <p><button onclick="changeColor('deepskyblue');">голубой</button></p> 
+
+
+            </div>
+            
+            <footer class="footer">
+                я подвал
+            </footer>
+        </div>
+        
+
+        <script>
+            // let containerEl = document.getElementById('elements');
+            // alert (containerEl.innerHTML);
+
+            function changeColor(newColor) {
+                let elem = document.getElementById('whatisyou')
+                elem.style.color = newColor
+            }
+            
+            
+            // let message = (login == 'Сотрудник') ? 'Привет' :
+            // (login == 'Директор') ? 'Здравствуйте' :
+            // (login == '') ? 'Нет логина' :
+            // '';
+
+
+            // let agetest = prompt('how much', '');
+            // let age = (agetest > 18) ? 'aga' : 'net';
+            // alert(age)
+            for (let i = 0; i < 10; i++) {
+
+                if (i % 2 !== 0) 
+                alert( i );
+                
+
+            }
+ 
+
+                        
+        </script>
+    
+    </body>
+</html>
